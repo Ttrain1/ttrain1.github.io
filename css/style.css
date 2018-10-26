@@ -1,0 +1,46 @@
+
+* {
+	font-family:sans-serif;
+}	
+
+	header {
+		background-color: #6B8E23
+	}
+	h1 {
+		background-color:;
+
+	}
+	nav {
+		background-color:#6B8E23 ;
+	}
+
+	footer {
+		background-color:#6B8E23; 
+	}
+	main {
+		background-color: #D3D3D3;
+	}
+	li  a {
+		font-size: 24px;
+		text-decoration: none; 
+
+	}
+
+	.info {
+		border-style: solid;
+		border-size:;
+		border-radius:10px;
+		padding: 5px;
+
+	}
+
+	.skills{
+		border-style: solid;
+		border-radius: 10px;
+		padding: 5px;
+	}
+
+	img {
+		width:auto; 
+		height:200px;
+	}
