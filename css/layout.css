@@ -19,15 +19,19 @@ li {
 
 .aboutMe {
 	display: grid;
-	margin: 2rem auto;
+	margin: 1rem auto;
 	width: 50%;
 	grid-gap:2% 2%;
 	grid-template-columns:auto;
+
 }
 
 footer {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns:1fr 1.5fr;
+	justify-content:center;
+
+
 }
 img {
 	display: flex;
@@ -43,4 +47,165 @@ img {
 	width: 50%;
 	grid-gap:2% 2%;
 	grid-template-columns:auto;
+}
+.contact {
+	display:grid;
+	align-content: center;
+	justify-content: center;
+}
+
+small {
+	display: flex;
+	justify-content: center;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+.modal{
+	display:none;
+	position:fixed;
+	z-index: 1;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+.modal-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 15% auto;
+	padding: 20px;
+	width: 80%;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 80%;
+
+}
+
+.skills-button {
+	display: flex;
+	justify-content: center;
+}
+
+
+.slideshow-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.slideshow-container .mySlides {
+	border: none;
+	padding: none;
+	background-color: transparent;
+}
+	.slideshow-container .mySlides:hover {
+		border-radius: 3%;
+		background-color: rgba(0,0,0,0.25);
+	}
+
+
+
+.mySlides {
+	display: none;
+}
+
+.mySlides figure {
+	max-width: 35vw;
+}
+	.mySlides figure img {
+		width: 100%;
+		border-radius: 50%;
+	}
+
+.prev, .next {
+	background-color: rgba(0,0,0,0.25)
+	border: 1px solid black;
+	cursor: pointer;
+	height: 100%;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 25%;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.75)
+}
+
+figcaption {
+	width: 100%;
+	text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#projects-section * {
+	margin: 1rem;
+}
+
+
+
+
+/*----------------------------------------------------*/
+.slideshow-container .mySlides2 {
+	border: none;
+	padding: none;
+	background-color: transparent;
+}
+	.slideshow-container .mySlides2:hover {
+		border-radius: 3%;
+		background-color: rgba(0,0,0,0.25);
+	}
+
+.mySlides2 {
+	display: none;
+}
+
+.mySlides2 figure {
+	max-width: 35vw;
+}
+	.mySlides2 figure img {
+		width: 100%;
+		border-radius: 50%;
+	}
+
+.prev2, .next2 {
+	background-color: rgba(0,0,0,0.25)
+	border: 1px solid black;
+	cursor: pointer;
+	height: 100%;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 25%;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+.next2 {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev2:hover, .next2:hover {
+	background-color: rgba(0,0,0,0.75)
 }

@@ -11,10 +11,16 @@
 	<div class="container">
 	<header>
 		<h1>Thomas Lenhart</h1>
-		<nav class="navigation">
-			<ul>
+		
+
+
+		<nav class="dropdown">
+			<button class="dropbtn">Menu</button>
+			<ul id="myDropdown" class="dropdown-content">
 				<li><a href="#aboutMe">About,</a></li>
 				<li><a href="#project">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="https://resume.creddle.io/resume/86thboqx8oo">Resume</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -28,15 +34,32 @@
 				<img src="image/thomas-headshot.jpg">
 			</div>
 
-			<div>
+			<div class="aboutMe">
 			<h3>About Me</h3>
 			<p class="info"> I am a junior software developer  who used to work in the foodservice industry for the past three years. recent I made a change in careers by going to “We Can Code IT”s” tech boot camp. Ever since I been excited to learn anything and everything about software development.</p>
 			
-			<p class="info"> <strong>Email:</strong> lenhart.thomas10@gmail.com <br><a href="740-815-0000"></a> <strong>Phone:</strong> <br>
-			<a href="https://github.com/Ttrain1"><strong>Github</strong></a> <br> <a href="https://www.linkedin.com/in/thomas-lenhart-961814170/">						  <strong>LinkedIn</strong></a></p>
-			<p class="skills">Java  •  JavaScript  •  JQuery  •  MVC •  HTML5  •  CSS3
-							  Object Oriented Programming (OOP)  •  Responsive Design / Mobile  •  Structured Query Language (SQL)
-							  Transactional Databases / MS SQL  •  Source Control / Git/ GitHub</p>
+			<button id="skills-button">Skills</button>
+
+
+			<div id="skills-modal" class="modal">
+					<span class="close">&times;</span>			
+			<div class="modal-content">
+					<ul id="skills-list" >
+						<li>Java</li>
+						<li>Javascript</li>
+						<li>HTML/CSS</li>
+						<li>Git</li>
+						<li>TDD</li>
+						<li>Agile</li>
+						<li>Databases</li>
+						<li>SQL</li>
+						<li>Responsive Design</li>
+						<li>Spring Boot</li>
+						<li>MVC</li>
+						
+					</ul>
+				</div>
+			</div>
 			</div>
 		
 		</section>
@@ -44,6 +67,72 @@
 		<section id="project" class="project">
 		
 			<h3>Projects</h3>
+
+
+			<section class="slideshow-container">
+			
+			<a class="prev">&#10094;</a>
+
+			<a class="mySlides fade" href="#project">
+				<figure>					
+					<img src="image/code-photo.jpg"  >
+					
+				</figure>
+			</a>
+
+			<a class="mySlides fade" href="https://github.com/Ttrain1/virtual-pet">
+				<figure>					
+					<img src="image/dean-cat.jpg">
+					<figcaption>Virtual Pet</figcaption>
+				</figure>
+			</a>
+
+			<a class="mySlides fade" href="https://github.com/Ttrain1/virtual-pet-shelter">
+				<figure>					
+					<img src="image/dean-zeno.jpg">
+					<figcaption>Virtual Pets Shelter</figcaption>
+				</figure>
+			</a>
+
+			<a class="mySlides fade" href="https://github.com/Ttrain1/virtual-pet-AMOK">
+				<figure>					
+					<img src="image/dean-amok.jpg">
+					<figcaption>Virtual Pet AMOK</figcaption>
+				</figure>
+			</a>
+
+			
+			<a class="next">&#10095;</a>
+
+		</section> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<img src="image/code-photo.jpg">
 
 			<article>
 				<h4><a href="https://github.com/Ttrain1/virtual-pet">Virtual Pet</a> </h4>
@@ -68,9 +157,20 @@
 	</main>
 
 	<footer>
+			<h3 style="margin-left: 10px">Contatct Info</h3>
+		<section id="contact" style="margin: 20px 45px">
+			<li><a href="lenhart.thomas10@gmail.com"><img src="image/mail.png"></a></li>
+			<li><a href="https://www.linkedin.com/in/thomas-lenhart-961814170/"><img src="image/linkedin.png"></a></li>
+			<li><a href="https://github.com/Ttrain1"><img src="image/github.png"></a></li>
+		 </section>
 		<small>&copy; 2018</small>
 	</footer>
 	</div>
 </body>
+
+<script src="./js/app.js"> 
+
+</script>
+
 
 </html>
